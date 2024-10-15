@@ -10,6 +10,7 @@ function Accordian() {
     function handelSingleSlection(getCurrentId) {
         setSlected(getCurrentId === selected ? null : getCurrentId);
     }
+
     function handelMultiSlection(getCurrentId) {
         let cpyMultiple = [...multiple];
         const findIndexOfCurrId = cpyMultiple.indexOf(getCurrentId);
@@ -21,7 +22,7 @@ function Accordian() {
         setMultiple(cpyMultiple);
     }
 
-    console.log(selected, multiple);
+    // console.log(selected, multiple);
 
     return (
         <div className="wrapper">
@@ -38,9 +39,10 @@ function Accordian() {
                                 <span>+</span>
                             </div>
                             {
-                                enableMultiSelected ? multiple.indexOf(dataItems.id) !== -1 && (
-                                    <div className="content">{dataItems.answer}</div>
-                                )
+                                enableMultiSelected ?
+                                    multiple.indexOf(dataItems.id) !== -1 && (
+                                        <div className="content">{dataItems.answer}</div>
+                                    )
                                     :
                                     selected === dataItems.id && (
                                         <div className="content">
@@ -49,7 +51,7 @@ function Accordian() {
                                     )
 
                             }
-                            
+
                             {/* 
                             {
                                 selected === dataItems.id || multiple.indexOf(dataItems.id) !== -1 ? (
