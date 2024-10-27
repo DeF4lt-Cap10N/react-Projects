@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
 
-      <StarRating noOfStars={10}></StarRating>
+      <StarRating noOfStars={5}></StarRating>
     </div>
   )
 }
