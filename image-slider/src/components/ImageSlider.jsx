@@ -1,8 +1,7 @@
-
 import { useEffect, useState } from "react"
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from 'react-icons/bs'
 
-
-function ImageSlider({ url, limit=5, page = 1 }) {
+function ImageSlider({ url, limit = 5, page = 1 }) {
 
   const [images, setImages] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -32,18 +31,20 @@ function ImageSlider({ url, limit=5, page = 1 }) {
 
   console.log(images);
 
-  if(loading){
+  if (loading) {
     return <div>Loding data! please wait</div>
   }
 
-  if(errorMsg !== null){
+  if (errorMsg !== null) {
     return <div>Error occured! {errorMsg}</div>
   }
 
   return (
-    <div className="container">
-      hii
-    </div>
+   <div className="container">
+    hell
+    <BsArrowLeftCircleFill/>
+    <BsArrowRightCircleFill/>
+   </div>
   )
 }
 
