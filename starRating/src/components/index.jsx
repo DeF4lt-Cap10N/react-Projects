@@ -34,7 +34,8 @@ export default function StarRating({ noOfStars }) {
                      onClick={() => handleClick(index)}
                      onMouseMove={() => handleMouseEnter(index)}
                      onMouseLeave={() => handleMouseLeave()}
-                     size={40} />
+                     size={50} //size for 'star' icon  not for  index
+                      />
                )
             })
          }
