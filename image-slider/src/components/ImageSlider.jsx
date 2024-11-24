@@ -41,9 +41,25 @@ function ImageSlider({ url, limit = 5, page = 1 }) {
 
   return (
    <div className="container">
-    hell
-    <BsArrowLeftCircleFill/>
-    <BsArrowRightCircleFill/>
+    <BsArrowLeftCircleFill className="arrow arrow-left"/>
+    {
+      images && images.length ? images.map((imageItem) => (
+        <img 
+        key={imageItem.id}
+        alt={imageItem.download_url}
+        src={imageItem.download_url}
+        className="current-image"
+        />
+      )):null
+    }
+
+    <BsArrowRightCircleFill className="arrow arrow-right"/>
+    <span className="circle-indicators">
+      {
+        images && images
+
+      }
+    </span>
    </div>
   )
 }
