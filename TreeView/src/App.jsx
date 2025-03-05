@@ -1,9 +1,12 @@
+import React from "react"
+import Tree from "./components/Tree"
+import menus from "./components/data"
 
-function App() {
- 
+ const App = () => {
+
   return (
     <>
-      
+    <Tree menus={menus}/>
     </>
   )
 }
