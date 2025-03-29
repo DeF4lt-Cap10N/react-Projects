@@ -1,0 +1,74 @@
+.container{
+  font-family: sans-serif;
+}
+.tab-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  
+}
+.active-component{
+  display: flex;
+  justify-content: center;
+}
+
+.tab-body{
+  display: flex;
+  border: 1px solid black;
+  width: 100vh;
+  height: 50vh;
+  border-radius: 10px;
+}
+
+
+.btn{
+  padding: 10px;
+  margin: 5px;
+  width: 10vh;
+  border-radius: 10px;
+}
+
+.profile-container{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.inp-profile{
+  padding: 7px;
+  margin-left: 5px;
+  background-color: aquamarine;
+}
+
+.profile-name{
+  font-size: 20px;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-toggle{
+  padding: 8px;
+}
+
+.settings{
+  padding: 25px;
+}
+
+.settings-theme{
+  padding: 5px;
+  font-size: larger;
+}
+
+.Interest{
+  padding: 25px;
+}
+
+.Interest-type{
+  padding: 5px;
+  font-size: larger;
+}
