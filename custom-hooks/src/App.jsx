@@ -1,8 +1,12 @@
 import React from 'react'
+import UseFetchTest from './components/useFetch/UseFetchTest'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      {/* useFtech custom Hook */}
+      <UseFetchTest/>
+    </div>
   )
 }
 
