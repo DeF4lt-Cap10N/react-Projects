@@ -12,7 +12,7 @@ const Banner = () => {
                YOUR FEET DESERVE THE BEST 
             </h1>
             <p style={{width:"404px", height:"95px", fontFamily:"sans-serif", fontSize:"18px"}}>
-               YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR SHOES.YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR SHOES.
+               YOUR FEET DESERVE THE BEST AND WE'RE HERE TO HELP YOU WITH OUR SHOES.YOUR FEET DESERVE THE BEST AND WE'RE HERE TO HELP YOU WITH OUR SHOES.
             </p>
             <div style={{width:"331px", height:"41px", }}>
                <button style={{width:"151px",height:"41px",  marginRight:"10px", backgroundColor:"red", outline:'none', border:"none", color:"white", fontFamily:"sans-serif", fontSize:"18px"}}>Shop Now</button>
