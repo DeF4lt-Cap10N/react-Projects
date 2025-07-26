@@ -1,12 +1,14 @@
 import { createContext, useState } from "react";
 import axios from "axios"
+
 export const GlobalContext = createContext(null);
 
 const GlobalState = ({ children }) => {
   const [searchParam, setSearchParam] = useState("");
   const [loading, setLoading] = useState(false);
   const [recipelist, setRecipeList] = useState([]);
-
+  const [recipeDetails, setRecipeDetails] = useState(null);
+  const [favouriteItem, setFavouriteItem] = useState([]);
   
 
   async function handleSubmit(event){
@@ -26,8 +28,26 @@ const GlobalState = ({ children }) => {
     }
   }
 
+
+  function addFavouriteItem(itemIdx){
+    let getFavouritelist = [...favouriteItem];
+    const index = getFavouritelist.findIndex((e)=>e.id===itemIdx.id);
+
+    if(index===-1){
+      getFavouritelist.push(itemIdx);
+    }
+    else{
+      getFavouritelist.splice(index, 1);
+    }
+    setFavouriteItem(getFavouritelist);
+   
+  }
+
+ console.log("favourite:", favouriteItem);
+
+
   return (
-    <GlobalContext.Provider value={{ searchParam, setSearchParam, handleSubmit, loading, recipelist}}>
+    <GlobalContext.Provider value={{ searchParam, setSearchParam, handleSubmit, loading, recipelist, recipeDetails, setRecipeDetails, addFavouriteItem, favouriteItem}}>
       {children}
     </GlobalContext.Provider>
   );
